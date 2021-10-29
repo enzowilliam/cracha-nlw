@@ -1,0 +1,92 @@
+*{
+  margin: 0px; /*zera propriedades */
+}
+html, body {
+  height: 100%;
+}
+
+body {
+
+  --gray: hsla(240, 9%, 89%); /*declaração de cor */
+  --black: hsla(240, 6%, 13%);
+
+  display: grid;
+  place-items: center;
+
+  font-family: 'roboto', sans-serif; /*google fonts*/
+  -webkit-font-smoothing: antialiased;
+}
+
+main{
+  background: url(images/background2.png);
+  width: 375px;
+  height: 812px;
+}
+
+.container{
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--gray);
+}
+
+.avatar{
+  width: 10rem;/*160px*/
+  margin: 11.5rem auto 0;
+
+  position: relative;
+}
+
+.avatar span{
+  position: absolute;
+  top: -15px;
+  z-index: +1;
+}
+
+.avatar > img{
+  width: 10rem;
+  height: 11,5rem;
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%); /*desenho da forma pelo site css clip-path maker*/
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--gray);
+  text-decoration: none;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-top: .25rem;
+}
+
+p{
+  margin-top: 2rem;
+}
+
+ul{
+  margin-top: 4rem;
+
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
+}
+
+
+
+/*1rem=16px*/
